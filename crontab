@@ -1,0 +1,2 @@
+@midnight /usr/local/bin/minecraft_cli backup && /usr/local/bin/telegram_bot Backup_terminado
+@midnight overviewer.py --rendermodes=smooth-lighting,cave /srv/minecraft-server/world /var/www/html/minecraft
