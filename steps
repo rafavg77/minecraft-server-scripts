@@ -1,0 +1,9 @@
+sudo apt-get install screen
+sudo adduser --system --home /srv/minecraft-server minecraft
+sudo addgroup --system minecraft
+sudo adduser minecraft minecraft # this adds user "minecraft" the group "minecraft"
+sudo chown -R minecraft.minecraft /srv/minecraft-server
+
+sudo systemctl enable minecraft-server
+sudo systemctl daemon-reload
+sudo service minecraft-server start
