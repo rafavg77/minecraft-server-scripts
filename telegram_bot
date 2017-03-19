@@ -1,0 +1,3 @@
+#!/bin/bash
+
+curl -i -X POST https://api.telegram.org/bot<API_KEY>/sendMessage --data "chat_id=<CHAT_ID>&text=$1"
